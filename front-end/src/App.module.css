@@ -1,0 +1,42 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #2E2D4E;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  & h2 {
+    color: #f1f1f1;
+    margin-bottom: 10px;
+  }
+
+  & button {
+    border: none;
+    border-radius: 30px;
+    background-color: #363653;
+    color: #f1f1f1;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  & button:hover {
+    opacity: 0.8;
+  }
+
+  & button.ativo {
+    background-color: #8B8Ae1;
+  }
+}
+
+.conteudo {
+  flex: 1;
+  padding: 40px;
+}
